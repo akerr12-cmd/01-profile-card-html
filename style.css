@@ -7,17 +7,26 @@
 }
 
 @font-face {
-	font-family: "Silver Northern";
+	font-family: "silver-northern";
 	src: url("fonts/SilverNorthern.ttf") format("truetype"),
-		 url("fonts/SilverNorthern.otf") format("opentype");
+		url("fonts/SilverNorthern.otf") format("opentype");
 	font-weight: 400;
 	font-style: normal;
+}
+
+@font-face {
+	font-family: "komet";
+	src: url("fonts/Komet-Italic.woff2") format("woff2"),
+		url("fonts/Komet-Italic.woff") format("woff"),
+		url("fonts/Komet-Italic.otf") format("opentype");
+	font-weight: 500;
+	font-style: italic;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-	font-family: "Silver Northern", "Segoe UI", Tahoma, sans-serif;
+	font-family: "silver-northern", "Segoe UI", Tahoma, sans-serif;
 	background: linear-gradient(135deg, #eef2ff, #fdfbff);
 	color: var(--text);
 	min-height: 100vh;
@@ -91,10 +100,15 @@ main {
 }
 
 .name { font-size: 1.4rem; font-weight: 700; }
+.card p {
+	font-family: "komet", "silver-northern", "Segoe UI", Tahoma, sans-serif;
+	font-weight: 500;
+	font-style: italic;
+}
 .role {
 	color: var(--muted);
-	font-family: "Silver Northern", "Segoe UI", Tahoma, sans-serif;
-  font-weight: 700;
+	font-family: "silver-northern", "Segoe UI", Tahoma, sans-serif;
+	font-weight: 700;
 }
 
 .actions {
