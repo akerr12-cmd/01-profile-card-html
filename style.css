@@ -6,10 +6,18 @@
 	--muted: #6b7280;
 }
 
+@font-face {
+	font-family: "Silver Northern";
+	src: url("fonts/SilverNorthern.ttf") format("truetype"),
+		 url("fonts/SilverNorthern.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-	font-family: "Segoe UI", Tahoma, sans-serif;
+	font-family: "Silver Northern", "Segoe UI", Tahoma, sans-serif;
 	background: linear-gradient(135deg, #eef2ff, #fdfbff);
 	color: var(--text);
 	min-height: 100vh;
@@ -83,7 +91,11 @@ main {
 }
 
 .name { font-size: 1.4rem; font-weight: 700; }
-.role { color: var(--muted); }
+.role {
+	color: var(--muted);
+	font-family: "Silver Northern", "Segoe UI", Tahoma, sans-serif;
+  font-weight: 700;
+}
 
 .actions {
 	display: flex;
