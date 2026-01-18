@@ -36,6 +36,8 @@ header {
 	font-weight: 700;
 	letter-spacing: 0.5px;
 	color: var(--accent);
+	margin: 0;
+	font-size: 1.1rem;
 }
 
 nav ul {
